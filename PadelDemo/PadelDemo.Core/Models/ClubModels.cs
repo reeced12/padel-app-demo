@@ -9,14 +9,14 @@ namespace PadelDemo.Core.Models {
         public int Id { get; set; }
         public string Name { get; set; }
         // TODO: link to address
-        public List<Court> Courts { get; set; }
+        public List<CourtModel> Courts { get; set; }
         public ClubModel()
         {
-            Courts = new List<Court>();
+            Courts = new List<CourtModel>();
         }
     }
 
-    public class Court {
+    public class CourtModel {
         public int Id { get; set; }
         public int ClubId { get; set; }
         public string Name { get; set; }

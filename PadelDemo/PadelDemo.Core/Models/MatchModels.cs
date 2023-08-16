@@ -10,16 +10,15 @@ namespace PadelDemo.Core.Models {
         public int ClubId { get; set; }
         public int CourtId { get; set; }
         public DateTime Date { get; set; }
-        public List<MatchPlayer> MatchPlayers { get; set; }
+        public List<MatchPlayerModel> MatchPlayers { get; set; }
 
         public MatchModel()
         {
-            MatchPlayers = new List<MatchPlayer>();
+            MatchPlayers = new List<MatchPlayerModel>();
         }
-
     }
 
-    public class MatchPlayer {
+    public class MatchPlayerModel {
         public int Id { get; set; }
         public int UserId { get; set; }
         public int MatchId { get; set; }
